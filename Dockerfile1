@@ -1,0 +1,9 @@
+FROM openjdk:8
+
+COPY . /var/www/java
+
+WORKDIR /var/www/java
+
+RUN javac Hello_class_its_my_simplilearnproject5092023.java
+
+CMD ["java", "Hello_class_its_my_simplilearnproject5092023"]
